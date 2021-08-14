@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+div.bg-light-green {
+  width: 200px;
+  height: 320px;
+}
+h4{
+  height: 100px;
+  overflow: hidden;
+  max-lines: 1;
+}
