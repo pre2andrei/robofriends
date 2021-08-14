@@ -3,16 +3,11 @@ import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 
 import './index.css';
-import CardList from './CardsList';
-import SearchBox from './SearchBox';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-      <div className='tc'>
-        <h1>Robo Friends</h1>
-        <SearchBox />
-      </div>
-      <CardList />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

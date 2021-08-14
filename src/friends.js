@@ -9,7 +9,7 @@
     {
         id: 2,
         firstName: 'Razvan',
-        lastName: '????????',
+        lastName: 'Dinca',
         quote: 'F1 bla bla bla F1 F1 ba bla F1',
         roboCode: 'sdfghsere6e'
     },
@@ -44,7 +44,7 @@
     {
         id: 7,
         firstName: 'Andra',
-        lastName: '???????',
+        lastName: 'Niculae',
         quote: '*continues to eat*',
         roboCode: '65fgdjgj'
     },
