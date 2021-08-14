@@ -4,9 +4,14 @@ import reportWebVitals from './reportWebVitals';
 
 import './index.css';
 import CardList from './CardsList';
+import SearchBox from './SearchBox';
 
 ReactDOM.render(
   <React.StrictMode>
+      <div className='tc'>
+        <h1>Robo Friends</h1>
+        <SearchBox />
+      </div>
       <CardList />
   </React.StrictMode>,
   document.getElementById('root')
