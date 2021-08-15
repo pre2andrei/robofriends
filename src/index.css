@@ -17,8 +17,16 @@ div.bg-light-green {
   width: 200px;
   height: 320px;
 }
-h4{
-  height: 100px;
+h3{
+  height: 40px;
   overflow: hidden;
   max-lines: 1;
+}
+h4{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: block;
+  line-height: 1em; 
+  max-height: 2em; 
 }
