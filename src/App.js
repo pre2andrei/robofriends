@@ -3,6 +3,7 @@ import CardList from './CardsList';
 import SearchBox from './SearchBox';
 import Scroll from './Scroll';
 import './App.css'
+import ErrorCheck from './ErrorCheck';
 
 class App extends Component {
     constructor() {
@@ -13,11 +14,10 @@ class App extends Component {
         };
     };
 
-    componentDidMount()
-    {
+    componentDidMount() {
         fetch('https://jsonplaceholder.typicode.com/users')
-        .then(response=>response.json())
-        .then(users => this.setState({robots: users}));
+            .then(response => response.json())
+            .then(users => this.setState({ robots: users }));
     }
 
     onSearchChange = (event) => {
@@ -32,17 +32,19 @@ class App extends Component {
 
         });
 
-        if(this.state.robots.length===0)
-        return (<h1>Loading</h1>);
+        if (this.state.robots.length === 0)
+            return (<h1>Loading</h1>);
 
-        return ( < div className = 'tc' >
-        <h1 className='f1'> Robo Friends </h1> 
-        <SearchBox onSearchChange = { this.onSearchChange }/> 
-        <Scroll>
-        < CardList robots = { filteredRobots }/> 
-        </Scroll>
+        return (< div className='tc' >
+            <h1 className='f1'> Robo Friends </h1>
+            <SearchBox onSearchChange={this.onSearchChange} />
+            <ErrorCheck>
+                <Scroll>
+                    < CardList robots={filteredRobots} />
+                </Scroll>
+            </ErrorCheck>
         </div>);;
-        }
     }
+}
 
-    export default App;
+export default App;
