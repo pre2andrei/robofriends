@@ -1,12 +1,11 @@
-import friends from './friends';
 import Card from './Card';
 
-const CardList = () => {
+const CardList = ({robots}) => {
     return (
         <div>
-            {friends.map((item)=>{
+            {robots.map((item)=>{
                 return (
-                    <Card key={item.id} friend={item} />)
+                    <Card key={item.id} user={item} />)
             })}
         </div>
     )
